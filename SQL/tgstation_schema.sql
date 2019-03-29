@@ -168,7 +168,7 @@ CREATE TABLE `feedback` (
   `key_name` varchar(32) NOT NULL,
   `key_type` enum('text', 'amount', 'tally', 'nested tally', 'associative') NOT NULL,
   `version` tinyint(3) unsigned NOT NULL,
-  `json` json NOT NULL,
+  `json` LONGTEXT NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
